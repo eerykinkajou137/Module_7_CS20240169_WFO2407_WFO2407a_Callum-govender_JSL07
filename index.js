@@ -50,5 +50,12 @@ document.addEventListener('DOMContentLoaded', function () {
     closeModal.addEventListener('click', function () {
         modal.style.display = 'none';
     });
+
+    //quality of life
+    window.addEventListener('click', function (e) {
+      if (e.target === modal) {
+          modal.style.display = 'none';
+      }
   });
+ });
   
